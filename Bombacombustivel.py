@@ -17,3 +17,4 @@ class BombaCombustivel:
             return litros * self.valor_litro
         else:
             return "-1"
+        

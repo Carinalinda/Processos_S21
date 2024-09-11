@@ -13,6 +13,7 @@ def main():
     modo_abastecimento = input("Deseja abastecer por valor ou por litro? (valor/litro): ").lower()
 
     # Escolhe a bomba correta com base no tipo de combustível
+    
     if tipo_combustivel == "etanol":
         bomba = bomba_etanol
     elif tipo_combustivel == "gasolina":

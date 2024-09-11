@@ -10,3 +10,4 @@ class BombaGasolina(BombaCombustivel):
             return valor_aditivo
         else:
             return "Quantidade insuficiente na bomba."
+        
