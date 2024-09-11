@@ -9,29 +9,11 @@ class BombaCombustivel:
             self.quantidade_disponivel -= litros_abastecidos
             return litros_abastecidos
         else:
-            return "Quantidade insuficiente na bomba."
+            return "-1."
 
     def abastecer_por_litro(self, litros):
         if litros <= self.quantidade_disponivel:
             self.quantidade_disponivel -= litros
             return litros * self.valor_litro
         else:
-            return "Quantidade insuficiente na bomba."
-
-        print(bomba.quantidade_disponivel) #Aqui tava o comando get, tentei alterar.
-
-
-# Subclasse BombaEtanol
-class BombaEtanol(BombaCombustivel):
-    pass  # Não precisa de alterações, apenas herda da classe base
-
-# Subclasse BombaGasolina
-class BombaGasolina(BombaCombustivel):
-    def abastecer_gasolina_com_aditivo(self, litros):
-        if litros <= self.quantidade_disponivel:
-            # Aqui, o valor do aditivo é imaginado como 10% mais caro
-            valor_aditivo = litros * self.valor_litro * 1.10
-            self.quantidade_disponivel -= litros
-            return valor_aditivo
-        else:
-            return "Quantidade insuficiente na bomba."
+            return "-1"
